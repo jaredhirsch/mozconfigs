@@ -1,0 +1,12 @@
+mk_add_options AUTOCLOBBER=1
+mk_add_options MOZ_OBJDIR=objdir-debug-full.noindex
+
+ac_add_options --with-ccache=sccache
+ac_add_options --disable-optimize
+ac_add_options --enable-debug-symbols
+ac_add_options --enable-debug
+
+ac_add_options --enable-bootstrap
+
+# enable telemetry
+ac_add_options MOZ_TELEMETRY_REPORTING=1

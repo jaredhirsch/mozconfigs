@@ -1,0 +1,9 @@
+mk_add_options AUTOCLOBBER=1
+mk_add_options MOZ_OBJDIR=objdir-artifact.noindex
+ac_add_options --enable-artifact-builds
+
+# set MOZILLA_OFFICIAL
+ac_add_options --enable-official-branding
+
+# set data reporting
+ac_add_options MOZ_DATA_REPORTING=1

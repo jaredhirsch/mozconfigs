@@ -1,0 +1,6 @@
+mk_add_options AUTOCLOBBER=1
+ac_add_options --with-ccache=sccache
+mk_add_options MOZ_OBJDIR=objdir-opt.noindex
+
+# enable telemetry stuff
+ac_add_options MOZ_TELEMETRY_REPORTING=1
